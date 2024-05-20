@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>due_date_and_status_rule</fullName>
+    <active>true</active>
+    <errorConditionFormula>ActivityDate &gt;  TODAY() &amp;&amp;  TEXT( Status )= &quot;Completed&quot;</errorConditionFormula>
+    <errorMessage>Status of the task cannot be completed is the due date is today</errorMessage>
+</ValidationRule>
